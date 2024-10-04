@@ -1,0 +1,75 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    /* padding: 0rem; */
+    background-color: #f9f9f9;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+    /* width:100%; */
+   
+}
+
+.header-content {
+    max-width: 60%;
+    margin-left:6rem;
+    text-align: left;
+}
+
+.header-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.header-content p {
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.highlight {
+    font-weight: bold;
+}
+
+.header-image img {
+    width: 100%;
+    max-width: 350px;
+    margin-right: 6rem;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
+   
+    /* border-radius: 43% 7% 50% 5% / 10% 50% 10% 50%; */
+}
+
+/* Keyframes for the popping effect */
+@keyframes pop {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.cta-button {
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #00aaff;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    animation: pop 2s infinite;
+        /* Animation: pop effect */
+}
+
+@media (max-width: 768px){
+    .header-image img {
+        display:none;
+    }
+
+}
